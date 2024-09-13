@@ -15,21 +15,30 @@ docker-compose up
 Start the service in detached mode:
 docker-compose up -d
 ```
-## API Endpoints
+## 3. API Endpoints
 ### Base URL
+```bash
 http://127.0.0.1:8000/api/v1/promptmanager
+```
 ### Endpoints:
+```bash
 /user_register
 •	Method: POST
 •	Description: Trigger this endpoint to register a user and generate a response.
+```
+
 ### Request Body (Example):
+```bash
 json
 {
     "prompt": "Your prompt text here"
 }
+```
 ### Response (Example):
+```bash
 {
     "status": "success",
     "result": "Generated response based on the prompt"
 }
+```
 
